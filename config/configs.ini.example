@@ -1,0 +1,17 @@
+[MONGODB]
+mongodb.environment=live
+mongodb.host.live=cls8xs1-pri.2d24t.mongodb.net
+mongodb.host.sandbox=cls8xs1.2d24t.mongodb.net
+mongodb.host.local=localhost
+mongodb.user=8x-esystem-master-user
+mongodb.pass=14yWeuEjVLrUq7hH
+mongodb.database.name=8xesystem
+
+[DATA-WAREHOUSE]
+mongodb.environment=live
+mongodb.host.live=cls8xs1-pri.2d24t.mongodb.net
+mongodb.host.sandbox=cls8xs1.2d24t.mongodb.net
+mongodb.host.local=localhost
+mongodb.user=8x-esystem-master-user
+mongodb.pass=14yWeuEjVLrUq7hH
+mongodb.database.name=datawarehouse
