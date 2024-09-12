@@ -23,7 +23,7 @@ class WorkSchedule(CustomBaseDocument):
 	line 				= ReferenceField('Line')
 	route 				= ReferenceField('Route')
 	waypoints 			= EmbeddedDocumentListField(WaypointRoute)
-	subenterprise 		= ReferenceField(SubEnterprise)
+	subenterprise 		= ReferenceField('SubEnterprise')
 	start_time 			= StringField()
 	start_point 		= ReferenceField('Point')
 	end_time 			= StringField()

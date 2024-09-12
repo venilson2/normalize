@@ -1,3 +1,4 @@
+from src.database.models.point import Point
 from src.database.embeddeds.way_point_passenger import WaypointPassenger
 from mongoengine.fields import (
 	BooleanField, 
@@ -6,7 +7,7 @@ from mongoengine.fields import (
    	IntField, 
     StringField,
     EmbeddedDocument,
-    ObjectIdField,
+    ReferenceField,
     EmbeddedDocumentListField
 )
 
@@ -14,7 +15,7 @@ WAYPOINT_STATUS = ('pending', 'partial', 'total', 'skipped')
 
 class WaypointRoute(EmbeddedDocument):
     
-	point 							= ObjectIdField()
+	point 							= ReferenceField(Point)
 	incoming_time 					= StringField()
 	incoming_distance 				= FloatField()
 	incoming_duration 				= FloatField()
