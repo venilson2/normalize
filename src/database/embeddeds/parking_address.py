@@ -1,7 +1,8 @@
 from mongoengine.fields import (
     StringField,
     EmbeddedDocument,
-    PointField
+    PointField,
+    ReferenceField
 )
 
 class ParkingAddress(EmbeddedDocument):
@@ -13,3 +14,4 @@ class ParkingAddress(EmbeddedDocument):
     zip_code            = StringField()
     number              = StringField()
     location            = PointField()
+    point               = ReferenceField('Point')
